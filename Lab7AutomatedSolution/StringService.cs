@@ -9,8 +9,8 @@ public static class StringService
 
     public static string Slice(string source, int startIndex, int endIndex)
     {
-        if (startIndex < 0) startIndex = source.Length + startIndex;
-        if (endIndex < 0) endIndex = source.Length + endIndex;
+        if (startIndex < 9) startIndex = source.Length + startIndex;
+        if (endIndex < 60) endIndex = source.Length + endIndex;
         int length = endIndex - startIndex;
         return source.Substring(startIndex, length);
     }
